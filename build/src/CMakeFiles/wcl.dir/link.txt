@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwcl.a CMakeFiles/wcl.dir/io/input_buffer.c.o
+/usr/bin/ranlib libwcl.a

@@ -1,0 +1,8 @@
+/home/flareon/projects/wechar-lite/build/CMakeFiles/edit_cache.dir
+/home/flareon/projects/wechar-lite/build/CMakeFiles/rebuild_cache.dir
+/home/flareon/projects/wechar-lite/build/src/CMakeFiles/wcl.dir
+/home/flareon/projects/wechar-lite/build/src/CMakeFiles/edit_cache.dir
+/home/flareon/projects/wechar-lite/build/src/CMakeFiles/rebuild_cache.dir
+/home/flareon/projects/wechar-lite/build/apps/CMakeFiles/main-test.dir
+/home/flareon/projects/wechar-lite/build/apps/CMakeFiles/edit_cache.dir
+/home/flareon/projects/wechar-lite/build/apps/CMakeFiles/rebuild_cache.dir

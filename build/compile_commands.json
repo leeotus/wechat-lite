@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/flareon/projects/wechar-lite/build/src",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -g -o CMakeFiles/wcl.dir/io/input_buffer.c.o -c /home/flareon/projects/wechar-lite/src/io/input_buffer.c",
+  "file": "/home/flareon/projects/wechar-lite/src/io/input_buffer.c"
+},
+{
+  "directory": "/home/flareon/projects/wechar-lite/build/apps",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -I/home/flareon/projects/wechar-lite/src -g -o CMakeFiles/main-test.dir/main.c.o -c /home/flareon/projects/wechar-lite/apps/main.c",
+  "file": "/home/flareon/projects/wechar-lite/apps/main.c"
+}
+]
