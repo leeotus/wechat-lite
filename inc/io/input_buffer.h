@@ -19,6 +19,7 @@ void close_input_buffer(InputBuffer *input_buffer);
 MetaCommandResult do_meta_command(InputBuffer *input_buffer);
 PrepareResult prepare_statement(InputBuffer *input_buffer, Statement *statement);
 
+PrepareResult prepare_insert(InputBuffer *input_buffer, Statement *statement);
 ExecuteResult execute_insert(Statement *statement, Table *table);
 ExecuteResult execute_select(Statement *statement, Table *table);
 ExecuteResult execute_statement(Statement *statement, Table *table);

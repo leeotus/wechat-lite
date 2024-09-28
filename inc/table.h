@@ -25,8 +25,8 @@
 */
 typedef struct {
     uint32_t id;
-    char username[COLUMN_USERNAME_SIZE];
-    char email[COLUMN_EMAIL_SIZE];
+    char username[COLUMN_USERNAME_SIZE+1]; // +1的原因是为了让最后一个字符设置为\0以确保不会出现字符过长导致乱码的情况,下同
+    char email[COLUMN_EMAIL_SIZE+1];
 } Row;
 
 /*

@@ -1,6 +1,7 @@
 #include "io/input_buffer.h"
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 /**
  * @brief Create a input buffer object
@@ -77,14 +78,7 @@ PrepareResult prepare_statement(InputBuffer *input_buffer, Statement *statement)
     // TODO: 目前只设置识别insert和select命令
     if(strncmp(input_buffer->buffer, "insert", 6) == 0) 
     {
-        statement->type = STATEMENT_INSERT;
-        // TODO: 处理insert的数据
-        int args_assigned = sscanf(input_buffer->buffer, "insert %d %s %s", 
-            &(statement->row_to_insert.id), statement->row_to_insert.username, statement->row_to_insert.email);
-            if (args_assigned < 3) {
-                return PREPARE_SYNTAX_ERROR;
-            }
-        return PREPARE_SUCCESS;
+        return prepare_insert(input_buffer, statement);
     }
     if(strcmp(input_buffer->buffer, "select") == 0)
     {
@@ -92,6 +86,59 @@ PrepareResult prepare_statement(InputBuffer *input_buffer, Statement *statement)
         return PREPARE_SUCCESS;
     }
     return PREPARE_UNRECOGNIZED_STATEMENT;
+}
+
+/**
+ * @brief 对输入的insert语句进行解析识别并将解析结果(即Row行数据)保存在statement对象中
+ * @param input_buffer 接收用火输入的buffer
+ * @param statement 要存储转换后命令的statement对象
+ * @return PrepareResult 解析结果
+ * @note 原本是prepare_statement中直接对输入的命令进行解析,现在将解析的这一部分工作分离出来
+ * 并且原本prepare_statement采用的是sscanf函数来格式化赋值到statement对象中,但是这个方法是
+ * 无法对输入的字符串长度做识别的,也就是说如果出现了用户输入的字符串过长的情况会导致溢出异常,
+ * 因此这里采用strtok函数来做解析工作
+ */
+PrepareResult prepare_insert(InputBuffer *input_buffer, Statement *statement)
+{
+    int id; // statement->row_to_insert.id是uint32_t类型,即unsigned int类型,但是为了识别输入id可能为负的情况,这里设置类型为int
+    char *cmd_tok = strtok(input_buffer->buffer, " ");
+    char *insert_id_data = strtok(NULL, " ");
+    char *insert_username_data = strtok(NULL, " ");
+    char *insert_email_data = strtok(NULL, " ");
+
+    // 检测输入数据是否合法:
+    if(cmd_tok == NULL || insert_id_data == NULL || insert_username_data == NULL || 
+        insert_email_data == NULL)
+    {
+        // 不合法的话返回语法错误:PREPARE_SYNTAX_ERROR
+        return PREPARE_SYNTAX_ERROR;
+    }
+
+    // 1.对输入id的合法性判断:
+    // 判断输入的id是否是数字:
+    if(isalnum(insert_id_data))
+        id = atoi(insert_id_data);
+    else
+        return PREPARE_SYNTAX_ERROR;
+    // 判断输入的id不为负数:
+    if(id < 0)
+        return PREPARE_NEGATIVE_NUMBER;
+
+    // 2.对输入的数据的长度进行判断
+    if(strlen(insert_username_data) >= COLUMN_USERNAME_SIZE || 
+                strlen(insert_email_data) >= COLUMN_EMAIL_SIZE)
+    {
+        // 输入太长返回PREPARE_STRING_TOO_LONG
+        return PREPARE_STRING_TOO_LANG;
+    }
+
+    // 3.将解析结果copy到statement中:
+    statement->type = STATEMENT_INSERT;
+    statement->row_to_insert.id = id;
+    strcpy(statement->row_to_insert.username, insert_username_data);
+    strcpy(statement->row_to_insert.email, insert_email_data);
+
+    return PREPARE_SUCCESS;
 }
 
 /**

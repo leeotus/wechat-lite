@@ -48,6 +48,16 @@ int main(int argc, char **argv)
             {
                 break;
             }
+            case (PREPARE_STRING_TOO_LANG):
+            {
+                printf("Input string is too long.\r\n");
+                continue;
+            }
+            case (PREPARE_NEGATIVE_NUMBER):
+            {
+                printf("id must positive!\r\n");
+                continue;
+            }
             case (PREPARE_SYNTAX_ERROR):
             {
                 // ?目前只有insert语句出错时候报这个错误
