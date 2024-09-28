@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/wcl.dir/io/input_buffer.c.o"
   "CMakeFiles/wcl.dir/io/input_buffer.c.o.d"
+  "CMakeFiles/wcl.dir/table.c.o"
+  "CMakeFiles/wcl.dir/table.c.o.d"
   "libwcl.a"
   "libwcl.pdb"
 )

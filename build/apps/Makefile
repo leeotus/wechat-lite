@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-apps/CMakeFiles/main-test.dir/rule:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/main-test.dir/rule
-.PHONY : apps/CMakeFiles/main-test.dir/rule
+apps/CMakeFiles/wechat-lite.dir/rule:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/wechat-lite.dir/rule
+.PHONY : apps/CMakeFiles/wechat-lite.dir/rule
 
 # Convenience name for target.
-main-test: apps/CMakeFiles/main-test.dir/rule
-.PHONY : main-test
+wechat-lite: apps/CMakeFiles/wechat-lite.dir/rule
+.PHONY : wechat-lite
 
 # fast build rule for target.
-main-test/fast:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/build
-.PHONY : main-test/fast
+wechat-lite/fast:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/build
+.PHONY : wechat-lite/fast
 
 main.o: main.c.o
 .PHONY : main.o
 
 # target to build an object file
 main.c.o:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/main.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -143,7 +143,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/main.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -151,7 +151,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/main.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -162,7 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main-test"
+	@echo "... wechat-lite"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

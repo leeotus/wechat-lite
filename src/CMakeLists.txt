@@ -4,8 +4,11 @@ message("CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
 
 add_library(
     ${SUBLIB_NAME}
+    ${WECHAT_INCLUDE_DIR}/table.h
+    ${WECHAT_INCLUDE_DIR}/cs_defs.h
     ${WECHAT_INCLUDE_DIR}/io/input_buffer.h
     io/input_buffer.c
+    table.c
 )
 
 target_include_directories(${SUBLIB_NAME} PUBLIC
@@ -20,3 +23,5 @@ set_target_properties(${SUBLIB_NAME} PROPERTIES
     EXPORT_NAME core
     LINKER_LANGUAGE CXX
 )
+
+add_subdirectory(data_structures)

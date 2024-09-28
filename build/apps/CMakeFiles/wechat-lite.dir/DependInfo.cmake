@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/flareon/projects/wechar-lite/apps/main.c" "apps/CMakeFiles/main-test.dir/main.c.o" "gcc" "apps/CMakeFiles/main-test.dir/main.c.o.d"
+  "/home/flareon/projects/wechar-lite/apps/main.c" "apps/CMakeFiles/wechat-lite.dir/main.c.o" "gcc" "apps/CMakeFiles/wechat-lite.dir/main.c.o.d"
   )
 
 # Targets to which this target links.

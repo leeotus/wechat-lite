@@ -130,17 +130,30 @@ wcl/fast:
 .PHONY : wcl/fast
 
 #=============================================================================
-# Target rules for targets named main-test
+# Target rules for targets named wechat-lite-ds
 
 # Build rule for target.
-main-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main-test
-.PHONY : main-test
+wechat-lite-ds: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wechat-lite-ds
+.PHONY : wechat-lite-ds
 
 # fast build rule for target.
-main-test/fast:
-	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/build
-.PHONY : main-test/fast
+wechat-lite-ds/fast:
+	$(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/build
+.PHONY : wechat-lite-ds/fast
+
+#=============================================================================
+# Target rules for targets named wechat-lite
+
+# Build rule for target.
+wechat-lite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wechat-lite
+.PHONY : wechat-lite
+
+# fast build rule for target.
+wechat-lite/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/build
+.PHONY : wechat-lite/fast
 
 # Help Target
 help:
@@ -150,8 +163,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main-test"
 	@echo "... wcl"
+	@echo "... wechat-lite"
+	@echo "... wechat-lite-ds"
 .PHONY : help
 
 

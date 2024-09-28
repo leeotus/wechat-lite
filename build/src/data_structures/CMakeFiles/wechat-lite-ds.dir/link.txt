@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwechat-lite-ds.a CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o
+/usr/bin/ranlib libwechat-lite-ds.a

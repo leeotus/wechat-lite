@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/main-test.dir/main.c.o -o main-test  ../src/libwcl.a 

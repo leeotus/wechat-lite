@@ -81,7 +81,7 @@ clean: apps/clean
 # Directory level rules for directory apps
 
 # Recursive "all" directory target.
-apps/all: apps/CMakeFiles/main-test.dir/all
+apps/all: apps/CMakeFiles/wechat-lite.dir/all
 .PHONY : apps/all
 
 # Recursive "preinstall" directory target.
@@ -89,7 +89,7 @@ apps/preinstall:
 .PHONY : apps/preinstall
 
 # Recursive "clean" directory target.
-apps/clean: apps/CMakeFiles/main-test.dir/clean
+apps/clean: apps/CMakeFiles/wechat-lite.dir/clean
 .PHONY : apps/clean
 
 #=============================================================================
@@ -97,15 +97,32 @@ apps/clean: apps/CMakeFiles/main-test.dir/clean
 
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/wcl.dir/all
+src/all: src/data_structures/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+src/preinstall: src/data_structures/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/wcl.dir/clean
+src/clean: src/data_structures/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/data_structures
+
+# Recursive "all" directory target.
+src/data_structures/all: src/data_structures/CMakeFiles/wechat-lite-ds.dir/all
+.PHONY : src/data_structures/all
+
+# Recursive "preinstall" directory target.
+src/data_structures/preinstall:
+.PHONY : src/data_structures/preinstall
+
+# Recursive "clean" directory target.
+src/data_structures/clean: src/data_structures/CMakeFiles/wechat-lite-ds.dir/clean
+.PHONY : src/data_structures/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/wcl.dir
@@ -114,12 +131,12 @@ src/clean: src/CMakeFiles/wcl.dir/clean
 src/CMakeFiles/wcl.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=3,4 "Built target wcl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=1,2,3 "Built target wcl"
 .PHONY : src/CMakeFiles/wcl.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/wcl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/wcl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/wcl.dir/rule
@@ -134,30 +151,56 @@ src/CMakeFiles/wcl.dir/clean:
 .PHONY : src/CMakeFiles/wcl.dir/clean
 
 #=============================================================================
-# Target rules for target apps/CMakeFiles/main-test.dir
+# Target rules for target src/data_structures/CMakeFiles/wechat-lite-ds.dir
 
 # All Build rule for target.
-apps/CMakeFiles/main-test.dir/all: src/CMakeFiles/wcl.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=1,2 "Built target main-test"
-.PHONY : apps/CMakeFiles/main-test.dir/all
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=6,7 "Built target wechat-lite-ds"
+.PHONY : src/data_structures/CMakeFiles/wechat-lite-ds.dir/all
 
 # Build rule for subdir invocation for target.
-apps/CMakeFiles/main-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/main-test.dir/all
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/CMakeFiles/wechat-lite-ds.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
-.PHONY : apps/CMakeFiles/main-test.dir/rule
+.PHONY : src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule
 
 # Convenience name for target.
-main-test: apps/CMakeFiles/main-test.dir/rule
-.PHONY : main-test
+wechat-lite-ds: src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule
+.PHONY : wechat-lite-ds
 
 # clean rule for target.
-apps/CMakeFiles/main-test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main-test.dir/build.make apps/CMakeFiles/main-test.dir/clean
-.PHONY : apps/CMakeFiles/main-test.dir/clean
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/clean
+.PHONY : src/data_structures/CMakeFiles/wechat-lite-ds.dir/clean
+
+#=============================================================================
+# Target rules for target apps/CMakeFiles/wechat-lite.dir
+
+# All Build rule for target.
+apps/CMakeFiles/wechat-lite.dir/all: src/CMakeFiles/wcl.dir/all
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=4,5 "Built target wechat-lite"
+.PHONY : apps/CMakeFiles/wechat-lite.dir/all
+
+# Build rule for subdir invocation for target.
+apps/CMakeFiles/wechat-lite.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/wechat-lite.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
+.PHONY : apps/CMakeFiles/wechat-lite.dir/rule
+
+# Convenience name for target.
+wechat-lite: apps/CMakeFiles/wechat-lite.dir/rule
+.PHONY : wechat-lite
+
+# clean rule for target.
+apps/CMakeFiles/wechat-lite.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/clean
+.PHONY : apps/CMakeFiles/wechat-lite.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

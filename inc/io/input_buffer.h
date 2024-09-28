@@ -3,7 +3,8 @@
 #define __INPUT_BUFFER__
 
 #include <stdio.h>
-#include <string.h>
+
+#include "cs_defs.h"
 
 typedef struct {
     char *buffer;
@@ -12,5 +13,14 @@ typedef struct {
 }InputBuffer;
 
 InputBuffer *create_input_buffer();
+int read_input(InputBuffer *input_buffer);
+void close_input_buffer(InputBuffer *input_buffer);
+
+MetaCommandResult do_meta_command(InputBuffer *input_buffer);
+PrepareResult prepare_statement(InputBuffer *input_buffer, Statement *statement);
+
+ExecuteResult execute_insert(Statement *statement, Table *table);
+ExecuteResult execute_select(Statement *statement, Table *table);
+ExecuteResult execute_statement(Statement *statement, Table *table);
 
 #endif

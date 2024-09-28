@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/wechat-lite.dir/main.c.o -o wechat-lite  ../src/libwcl.a 

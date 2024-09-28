@@ -83,17 +83,33 @@ src/CMakeFiles/wcl.dir/io/input_buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wcl.dir/io/input_buffer.c.s"
 	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/io/input_buffer.c -o CMakeFiles/wcl.dir/io/input_buffer.c.s
 
+src/CMakeFiles/wcl.dir/table.c.o: src/CMakeFiles/wcl.dir/flags.make
+src/CMakeFiles/wcl.dir/table.c.o: ../src/table.c
+src/CMakeFiles/wcl.dir/table.c.o: src/CMakeFiles/wcl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/wcl.dir/table.c.o"
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/wcl.dir/table.c.o -MF CMakeFiles/wcl.dir/table.c.o.d -o CMakeFiles/wcl.dir/table.c.o -c /home/flareon/projects/wechar-lite/src/table.c
+
+src/CMakeFiles/wcl.dir/table.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wcl.dir/table.c.i"
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/projects/wechar-lite/src/table.c > CMakeFiles/wcl.dir/table.c.i
+
+src/CMakeFiles/wcl.dir/table.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wcl.dir/table.c.s"
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/table.c -o CMakeFiles/wcl.dir/table.c.s
+
 # Object files for target wcl
 wcl_OBJECTS = \
-"CMakeFiles/wcl.dir/io/input_buffer.c.o"
+"CMakeFiles/wcl.dir/io/input_buffer.c.o" \
+"CMakeFiles/wcl.dir/table.c.o"
 
 # External object files for target wcl
 wcl_EXTERNAL_OBJECTS =
 
 src/libwcl.a: src/CMakeFiles/wcl.dir/io/input_buffer.c.o
+src/libwcl.a: src/CMakeFiles/wcl.dir/table.c.o
 src/libwcl.a: src/CMakeFiles/wcl.dir/build.make
 src/libwcl.a: src/CMakeFiles/wcl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libwcl.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libwcl.a"
 	cd /home/flareon/projects/wechar-lite/build/src && $(CMAKE_COMMAND) -P CMakeFiles/wcl.dir/cmake_clean_target.cmake
 	cd /home/flareon/projects/wechar-lite/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wcl.dir/link.txt --verbose=$(VERBOSE)
 

@@ -11,7 +11,12 @@ set(WECHAT_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/inc")
 
 add_subdirectory(src)
 
-option(BUILD_APPS "build application with this library." OFF)
+option(BUILD_APPS "build application with this library." ON)
 if(BUILD_APPS)
     add_subdirectory(apps)
+endif()
+
+option(ENABLE_TESTS "enable test for this library." OFF)
+if(ENABLE_TESTS) 
+    add_subdirectory(tests)
 endif()
