@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/ds-test.dir/ds_test.c.o -o ds-test  ../src/data_structures/libwechat-lite-ds.a 

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libwcl.a CMakeFiles/wcl.dir/io/input_buffer.c.o CMakeFiles/wcl.dir/table.c.o
+/usr/bin/ar qc libwcl.a CMakeFiles/wcl.dir/io/input_buffer.c.o CMakeFiles/wcl.dir/io/pager.c.o CMakeFiles/wcl.dir/table.c.o
 /usr/bin/ranlib libwcl.a

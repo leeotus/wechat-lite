@@ -154,6 +154,30 @@ io/input_buffer.c.s:
 	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/input_buffer.c.s
 .PHONY : io/input_buffer.c.s
 
+io/pager.o: io/pager.c.o
+.PHONY : io/pager.o
+
+# target to build an object file
+io/pager.c.o:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.o
+.PHONY : io/pager.c.o
+
+io/pager.i: io/pager.c.i
+.PHONY : io/pager.i
+
+# target to preprocess a source file
+io/pager.c.i:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.i
+.PHONY : io/pager.c.i
+
+io/pager.s: io/pager.c.s
+.PHONY : io/pager.s
+
+# target to generate assembly for a file
+io/pager.c.s:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.s
+.PHONY : io/pager.c.s
+
 table.o: table.c.o
 .PHONY : table.o
 
@@ -190,6 +214,9 @@ help:
 	@echo "... io/input_buffer.o"
 	@echo "... io/input_buffer.i"
 	@echo "... io/input_buffer.s"
+	@echo "... io/pager.o"
+	@echo "... io/pager.i"
+	@echo "... io/pager.s"
 	@echo "... table.o"
 	@echo "... table.i"
 	@echo "... table.s"

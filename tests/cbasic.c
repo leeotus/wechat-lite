@@ -1,19 +1,38 @@
+#pragma once
+#include <stdint.h>
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <unistd.h>
-
-#define NAME_LEN 16
-
-#define size_of_attribute(Struct, Attribute) sizeof(((Struct*)0)->Attribute)
+#include <stdlib.h>
 
 typedef struct {
-    size_t id;
-    char name[NAME_LEN];
-}TestStruct;
+    uint32_t len;       // 数组的当前长度
+    void *array;
+}CArray;
 
-int main(int argc, char **agrv)
+#define create_type_array(Struct, Type, Size) (Struct->array = (Type*)malloc(sizeof(Type)*Size))
+
+#define ai_create_array(Struct, Type, Size) \
+({ \
+    Struct *carr = (Struct *)malloc(sizeof(Struct)); \
+    if (carr == NULL) { \
+        fprintf(stderr, "Memory allocation failed\n"); \
+        exit(EXIT_FAILURE); \
+    } \
+    carr->array = (Type *)malloc(sizeof(Type) * Size); \
+    if (carr->array == NULL) { \
+        free(carr); \
+        fprintf(stderr, "Memory allocation failed\n"); \
+        exit(EXIT_FAILURE); \
+    } \
+    return carr; \
+})
+
+#define create_some_things(Type, Size) ((Type*)malloc(sizeof(Type)*Size))
+#define malloc_type_array(Object, Type, Size) (Object->array = create_some_things(Type, Size))  
+
+int main(int argc, char **argv)
 {
-    int size = size_of_attribute(TestStruct, id);
+    CArray *arr = (CArray*)malloc(sizeof(CArray));
+    malloc_type_array(arr, int, 10);
     return 0;
 }

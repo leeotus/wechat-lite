@@ -1,12 +1,15 @@
-#ifndef __TABLE_H__
-#define __TABLE_H__
+#pragma once
 
-#define TABLE_MAX_PAGES         100
-#define PAGE_SIZE               4096
-#define COLUMN_USERNAME_SIZE    32
-#define COLUMN_EMAIL_SIZE       255
+// #define TABLE_MAX_PAGES         100
+// #define PAGE_SIZE               4096
+// #define COLUMN_USERNAME_SIZE    32
+// #define COLUMN_EMAIL_SIZE       255
 
 #include <stdint.h>
+#include <stdbool.h>
+
+#include "defs.h"
+#include "io/pager.h"
 
 /**
  * @note: 不能写成: #define size_of_attribue(Struct, Attribute) sizeof(Struct.Attribute)
@@ -37,32 +40,38 @@ typedef struct {
     Keep a fixed-size array of pointers to pages
 */
 
-extern const uint32_t ID_SIZE;
-extern const uint32_t USERNAME_SIZE;
-extern const uint32_t EMAIL_SIZE;
-extern const uint32_t ID_OFFSET;
-extern const uint32_t USERNAME_OFFSET;
-extern const uint32_t EMAIL_OFFSET;
-extern const uint32_t ROW_SIZE;
-
-extern const uint32_t ROWS_PER_PAGE;
-extern const uint32_t TABLE_MAX_ROWS;
-
 
 /*
     a Table structure that points to pages of rows and keeps track
     of how many rows there are:
  */
 typedef struct {
+    // void *pages[TABLE_MAX_PAGES];
+    Pager *pager;
     uint32_t num_rows;
-    void *pages[TABLE_MAX_PAGES];
 }Table;
 
-Table* create_new_table();
-void free_table(Table *table);
+/**
+ * @brief Cursor类用于保存cursor的一个类,cursor用于指向表中的某一行
+ * @param table Cursor类对象指向的表
+ * @param row_num 当前cursor指向第几行数据
+ * @param end_of_table 判断当前cursor指向的行是否是表末尾行 
+ */
+typedef struct {
+    Table *table;
+    uint32_t row_num;
+    bool end_of_table;
+} Cursor;
+
+Table* db_open(const char *filename);
+void db_close(Table *table);
 void serialize_row(Row* _src, void *_dst);
 void deserialize_row(void *_src, Row *_dst);
-void* row_slot(Table *table, uint32_t row_num);
+[[deprecated]]void* row_slot(Table *table, uint32_t row_num);
 void print_row(Row *row);
 
-#endif
+
+Cursor *table_start(Table *table);
+Cursor *table_end(Table *table);
+void *cursor_value(Cursor *cursor);     // 替代row_slot函数
+void cursor_advance(Cursor *cursor);

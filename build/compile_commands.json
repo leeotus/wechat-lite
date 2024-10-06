@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/flareon/projects/wechar-lite/build/src",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -g -o CMakeFiles/wcl.dir/io/pager.c.o -c /home/flareon/projects/wechar-lite/src/io/pager.c",
+  "file": "/home/flareon/projects/wechar-lite/src/io/pager.c"
+},
+{
+  "directory": "/home/flareon/projects/wechar-lite/build/src",
   "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -g -o CMakeFiles/wcl.dir/table.c.o -c /home/flareon/projects/wechar-lite/src/table.c",
   "file": "/home/flareon/projects/wechar-lite/src/table.c"
 },

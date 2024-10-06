@@ -55,10 +55,16 @@ apps/CMakeFiles/wechat-lite.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/flareon/projects/wechar-lite/inc/cs_defs.h \
+ /home/flareon/projects/wechar-lite/inc/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /home/flareon/projects/wechar-lite/inc/table.h \
- /home/flareon/projects/wechar-lite/inc/table.h \
- /home/flareon/projects/wechar-lite/inc/io/input_buffer.h
+ /home/flareon/projects/wechar-lite/inc/defs.h \
+ /home/flareon/projects/wechar-lite/inc/io/pager.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /home/flareon/projects/wechar-lite/inc/io/input_buffer.h \
+ /home/flareon/projects/wechar-lite/inc/io/statement.h

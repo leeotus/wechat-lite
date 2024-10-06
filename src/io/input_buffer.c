@@ -53,11 +53,13 @@ void close_input_buffer(InputBuffer *input_buffer)
  * @return MetaCommandResult 返回处理之后的结果
  * @note 元命令都是以dot(.)作为第一个字符 
  */
-MetaCommandResult do_meta_command(InputBuffer *input_buffer)
+MetaCommandResult do_meta_command(InputBuffer *input_buffer, Table *table)
 {
     // 1.退出系统的元命令:
     if(!strcmp(input_buffer->buffer, ".exit"))
     {
+        db_close(table);
+        printf("bye\r\n");
         exit(EXIT_SUCCESS);
     } else {
         // TODO: 暂时设置为未知元命令
@@ -107,7 +109,7 @@ PrepareResult prepare_insert(InputBuffer *input_buffer, Statement *statement)
     char *insert_email_data = strtok(NULL, " ");
 
     // 检测输入数据是否合法:
-    if(cmd_tok == NULL || insert_id_data == NULL || insert_username_data == NULL || 
+    if(insert_id_data == NULL || insert_username_data == NULL || 
         insert_email_data == NULL)
     {
         // 不合法的话返回语法错误:PREPARE_SYNTAX_ERROR
@@ -115,11 +117,8 @@ PrepareResult prepare_insert(InputBuffer *input_buffer, Statement *statement)
     }
 
     // 1.对输入id的合法性判断:
-    // 判断输入的id是否是数字:
-    if(isalnum(insert_id_data))
-        id = atoi(insert_id_data);
-    else
-        return PREPARE_SYNTAX_ERROR;
+    id = atoi(insert_id_data);
+
     // 判断输入的id不为负数:
     if(id < 0)
         return PREPARE_NEGATIVE_NUMBER;
@@ -150,26 +149,32 @@ PrepareResult prepare_insert(InputBuffer *input_buffer, Statement *statement)
  */
 ExecuteResult execute_insert(Statement *statement, Table *table)
 {
-    if(table->num_rows >= TABLE_MAX_ROWS)
-    {
+    if (table->num_rows >= TABLE_MAX_ROWS) {
         return EXECUTE_TABLE_FULL;
     }
-    Row *row_to_insert = &(statement->row_to_insert);
-    serialize_row(row_to_insert, row_slot(table, table->num_rows));
+    Cursor* cursor = table_end(table); // 获取在表末尾的光标位置指针
+    Row* row_to_insert = &(statement->row_to_insert);
+    serialize_row(row_to_insert, cursor_value(cursor));
+    // serialize_row(row_to_insert, row_slot(table, table->num_rows));
     table->num_rows += 1;
+    free(cursor);
     return EXECUTE_SUCCESS;
 }
 
 ExecuteResult execute_select(Statement *statement, Table *table)
 {
+    Cursor *cursor = table_start(table);
     Row row;
     // !这里暂时选择将全部数据打印出来
-    for(int i=0;i<table->num_rows;++i)
+    while(!(cursor->end_of_table))
     {
-        deserialize_row(row_slot(table, i), &row);
+        deserialize_row(cursor_value(cursor), &row);
+        // deserialize_row(row_slot(table, i), &row);
         // 将查询结果打印出来:
         print_row(&row);
+        cursor_advance(cursor);
     }
+    free(cursor);
     return EXECUTE_SUCCESS;
 }
 

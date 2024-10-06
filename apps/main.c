@@ -3,19 +3,19 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include "cs_defs.h"
+#include "types.h"
 #include "table.h"
 #include "io/input_buffer.h"
 
 #define INPUT_ERROR -1
 #define SUCCESSFULLY_EXIT 0
-
 void print_prompt();
 
 int main(int argc, char **argv)
 {
     int res;
-    Table *table = create_new_table();
+    const char *db_file_name = "./wechat.db";
+    Table *table = db_open(db_file_name);
     InputBuffer* input_buffer = create_input_buffer();
     while(true)
     {
@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 
         if(input_buffer->buffer[0] == '.') {
             // switch to meta-commands.
-            switch (do_meta_command(input_buffer)) {
+            switch (do_meta_command(input_buffer, table)) {
                 case (META_COMMAND_SUCCESS):
                 {
                     // TODO: 除了.exit其他的元命令还没有设置

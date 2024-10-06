@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cbasic.dir/cbasic.c.o -o cbasic 

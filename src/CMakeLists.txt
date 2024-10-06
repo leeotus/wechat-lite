@@ -5,9 +5,13 @@ message("CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
 add_library(
     ${SUBLIB_NAME}
     ${WECHAT_INCLUDE_DIR}/table.h
-    ${WECHAT_INCLUDE_DIR}/cs_defs.h
+    ${WECHAT_INCLUDE_DIR}/defs.h
+    ${WECHAT_INCLUDE_DIR}/types.h
+    ${WECHAT_INCLUDE_DIR}/io/statement.h
     ${WECHAT_INCLUDE_DIR}/io/input_buffer.h
+    ${WECHAT_INCLUDE_DIR}/io/pager.h
     io/input_buffer.c
+    io/pager.c
     table.c
 )
 

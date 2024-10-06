@@ -2,7 +2,6 @@
 #define __DEFS_H__
 
 #include <stdint.h>
-#include "table.h"
 
 // definitions for commands and statement
 
@@ -32,10 +31,5 @@ typedef enum {
     EXECUTE_TABLE_FULL = -1,            // 运行命令失败:原因是数据表已满
     EXECUTE_SUCCESS = 0,                // 执行命令成功
 } ExecuteResult;
-
-typedef struct {
-    StatementType type;                 // 记录命令类型
-    Row row_to_insert;                  // 记录命令所附带的行数据
-} Statement;
 
 #endif
