@@ -130,6 +130,30 @@ wechat-lite-ds/fast:
 	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/build
 .PHONY : wechat-lite-ds/fast
 
+binary_tree/bt_node.o: binary_tree/bt_node.c.o
+.PHONY : binary_tree/bt_node.o
+
+# target to build an object file
+binary_tree/bt_node.c.o:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o
+.PHONY : binary_tree/bt_node.c.o
+
+binary_tree/bt_node.i: binary_tree/bt_node.c.i
+.PHONY : binary_tree/bt_node.i
+
+# target to preprocess a source file
+binary_tree/bt_node.c.i:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.i
+.PHONY : binary_tree/bt_node.c.i
+
+binary_tree/bt_node.s: binary_tree/bt_node.c.s
+.PHONY : binary_tree/bt_node.s
+
+# target to generate assembly for a file
+binary_tree/bt_node.c.s:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.s
+.PHONY : binary_tree/bt_node.c.s
+
 list/c_list.o: list/c_list.c.o
 .PHONY : list/c_list.o
 
@@ -154,6 +178,54 @@ list/c_list.c.s:
 	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.s
 .PHONY : list/c_list.c.s
 
+mem_pool/mempool.o: mem_pool/mempool.c.o
+.PHONY : mem_pool/mempool.o
+
+# target to build an object file
+mem_pool/mempool.c.o:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o
+.PHONY : mem_pool/mempool.c.o
+
+mem_pool/mempool.i: mem_pool/mempool.c.i
+.PHONY : mem_pool/mempool.i
+
+# target to preprocess a source file
+mem_pool/mempool.c.i:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.i
+.PHONY : mem_pool/mempool.c.i
+
+mem_pool/mempool.s: mem_pool/mempool.c.s
+.PHONY : mem_pool/mempool.s
+
+# target to generate assembly for a file
+mem_pool/mempool.c.s:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.s
+.PHONY : mem_pool/mempool.c.s
+
+queue/c_queue.o: queue/c_queue.c.o
+.PHONY : queue/c_queue.o
+
+# target to build an object file
+queue/c_queue.c.o:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o
+.PHONY : queue/c_queue.c.o
+
+queue/c_queue.i: queue/c_queue.c.i
+.PHONY : queue/c_queue.i
+
+# target to preprocess a source file
+queue/c_queue.c.i:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.i
+.PHONY : queue/c_queue.c.i
+
+queue/c_queue.s: queue/c_queue.c.s
+.PHONY : queue/c_queue.s
+
+# target to generate assembly for a file
+queue/c_queue.c.s:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.s
+.PHONY : queue/c_queue.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +235,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... wechat-lite-ds"
+	@echo "... binary_tree/bt_node.o"
+	@echo "... binary_tree/bt_node.i"
+	@echo "... binary_tree/bt_node.s"
 	@echo "... list/c_list.o"
 	@echo "... list/c_list.i"
 	@echo "... list/c_list.s"
+	@echo "... mem_pool/mempool.o"
+	@echo "... mem_pool/mempool.i"
+	@echo "... mem_pool/mempool.s"
+	@echo "... queue/c_queue.o"
+	@echo "... queue/c_queue.i"
+	@echo "... queue/c_queue.s"
 .PHONY : help
 
 

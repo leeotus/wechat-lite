@@ -8,7 +8,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/build/apps/wechat-lite",
+            "program": "${workspaceFolder}/build/tests/ds-test",
             "args": [],
             "cwd": "${workspaceFolder}"
         }

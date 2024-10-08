@@ -157,12 +157,12 @@ src/CMakeFiles/wcl.dir/clean:
 src/data_structures/CMakeFiles/wechat-lite-ds.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=7,8 "Built target wechat-lite-ds"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=7,8,9,10,11 "Built target wechat-lite-ds"
 .PHONY : src/data_structures/CMakeFiles/wechat-lite-ds.dir/all
 
 # Build rule for subdir invocation for target.
 src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/CMakeFiles/wechat-lite-ds.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
 .PHONY : src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule

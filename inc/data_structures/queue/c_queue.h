@@ -14,7 +14,7 @@ typedef  struct _queue_elemnt
 } cq_node;
 
 // ?单链表队列
-typedef struct _c_queue
+typedef struct 
 {
     uint32_t queue_size;    // 记录队列链表的当前长度
     cq_node* cq_node;        // 单链表的起始节点
@@ -25,6 +25,8 @@ c_queue* cqueue_init();
 uint32_t cqueue_len(c_queue* cq);
 uint32_t cqueue_size(c_queue* cq);
 int cqueue_push(c_queue *cq, void *val);
-int cqueue_pop(c_queue *cq, void *val);
+int cqueue_pop(c_queue *cq, void **val);
+bool is_cqueue_empty(c_queue *cq);
 
 cq_node *lookup(c_queue *cq);
+void garbage_collect(c_queue *cq);

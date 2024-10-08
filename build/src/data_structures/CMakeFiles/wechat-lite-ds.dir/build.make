@@ -83,17 +83,65 @@ src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wechat-lite-ds.dir/list/c_list.c.s"
 	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/data_structures/list/c_list.c -o CMakeFiles/wechat-lite-ds.dir/list/c_list.c.s
 
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o: src/data_structures/CMakeFiles/wechat-lite-ds.dir/flags.make
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o: ../src/data_structures/queue/c_queue.c
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o: src/data_structures/CMakeFiles/wechat-lite-ds.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o -MF CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o.d -o CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.i"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c > CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.i
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.s"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c -o CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.s
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o: src/data_structures/CMakeFiles/wechat-lite-ds.dir/flags.make
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o: ../src/data_structures/binary_tree/bt_node.c
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o: src/data_structures/CMakeFiles/wechat-lite-ds.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o -MF CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o.d -o CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.i"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c > CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.i
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.s"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c -o CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.s
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o: src/data_structures/CMakeFiles/wechat-lite-ds.dir/flags.make
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o: ../src/data_structures/mem_pool/mempool.c
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o: src/data_structures/CMakeFiles/wechat-lite-ds.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o -MF CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o.d -o CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.i"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c > CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.i
+
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.s"
+	cd /home/flareon/projects/wechar-lite/build/src/data_structures && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c -o CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.s
+
 # Object files for target wechat-lite-ds
 wechat__lite__ds_OBJECTS = \
-"CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o"
+"CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o" \
+"CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o" \
+"CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o" \
+"CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o"
 
 # External object files for target wechat-lite-ds
 wechat__lite__ds_EXTERNAL_OBJECTS =
 
 src/data_structures/libwechat-lite-ds.a: src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o
+src/data_structures/libwechat-lite-ds.a: src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o
+src/data_structures/libwechat-lite-ds.a: src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o
+src/data_structures/libwechat-lite-ds.a: src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o
 src/data_structures/libwechat-lite-ds.a: src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make
 src/data_structures/libwechat-lite-ds.a: src/data_structures/CMakeFiles/wechat-lite-ds.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libwechat-lite-ds.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libwechat-lite-ds.a"
 	cd /home/flareon/projects/wechar-lite/build/src/data_structures && $(CMAKE_COMMAND) -P CMakeFiles/wechat-lite-ds.dir/cmake_clean_target.cmake
 	cd /home/flareon/projects/wechar-lite/build/src/data_structures && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wechat-lite-ds.dir/link.txt --verbose=$(VERBOSE)
 

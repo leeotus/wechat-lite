@@ -20,6 +20,21 @@
   "file": "/home/flareon/projects/wechar-lite/src/data_structures/list/c_list.c"
 },
 {
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c"
+},
+{
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c"
+},
+{
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c"
+},
+{
   "directory": "/home/flareon/projects/wechar-lite/build/apps",
   "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -I/home/flareon/projects/wechar-lite/src -g -o CMakeFiles/wechat-lite.dir/main.c.o -c /home/flareon/projects/wechar-lite/apps/main.c",
   "file": "/home/flareon/projects/wechar-lite/apps/main.c"
