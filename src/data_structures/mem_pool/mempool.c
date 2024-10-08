@@ -48,6 +48,8 @@ inline bool is_freelinker_available(mem_pool *mp)
  * @brief 为内存池分配下一块内存块
  * @param mp 指向内存池的指针
  * @note 无需自己调用,只有在当前内存池不够空间的时候才会在alloc_from_mempool函数里自行调用
+ * @warning 如果内存池里的chunks数目超过MEMPOOL_CHUNKS那么不可避免的会发生内存错误
+ * TODO: 当chunks数目超过MEMPOOL_CHUNKS之后需要realloc内存给内存池使用?
  */
 void realloc_next_chunk(mem_pool *mp)
 {
@@ -106,6 +108,24 @@ void recyle_mem_avail(mem_pool *mp, void **ptr)
     tmp->next = mp->avail->next;
     mp->avail->next = tmp;
     *ptr = NULL;
+}
+
+/**
+ * @brief 垃圾回收
+ * @param mp 内存池对象指针
+ * @note TODO: 当前还没想好该怎么做
+ */
+void garbage_collect(mem_pool *mp)
+{
+    ssize_t cur_free_nodes;
+    free_linker *tmp = mp->avail;
+    while (tmp != NULL)
+    {
+        // 获取当前内存池里有多少内存空间是没有被使用的
+        cur_free_nodes += 1;
+        tmp = tmp->next;
+    }
+
 }
 
 /**

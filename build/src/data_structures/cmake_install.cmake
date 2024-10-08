@@ -1,4 +1,4 @@
-# Install script for directory: /home/flareon/projects/wechar-lite/src/data_structures
+# Install script for directory: /home/flareon/workshop/wechat-lite/src/data_structures
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

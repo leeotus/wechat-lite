@@ -1,7 +1,7 @@
 src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o: \
- /home/flareon/projects/wechar-lite/src/data_structures/list/c_list.c \
+ /home/flareon/workshop/wechat-lite/src/data_structures/list/c_list.c \
  /usr/include/stdc-predef.h \
- /home/flareon/projects/wechar-lite/inc/data_structures/list/c_list.h \
+ /home/flareon/workshop/wechat-lite/inc/data_structures/list/c_list.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

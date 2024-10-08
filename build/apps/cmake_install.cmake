@@ -1,4 +1,4 @@
-# Install script for directory: /home/flareon/projects/wechar-lite/apps
+# Install script for directory: /home/flareon/workshop/wechat-lite/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/flareon/projects/wechar-lite/tests/cbasic.c" "tests/CMakeFiles/cbasic.dir/cbasic.c.o" "gcc" "tests/CMakeFiles/cbasic.dir/cbasic.c.o.d"
+  "/home/flareon/workshop/wechat-lite/tests/cbasic.c" "tests/CMakeFiles/cbasic.dir/cbasic.c.o" "gcc" "tests/CMakeFiles/cbasic.dir/cbasic.c.o.d"
   )
 
 # Targets to which this target links.

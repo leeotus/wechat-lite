@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/flareon/projects/wechar-lite
+CMAKE_SOURCE_DIR = /home/flareon/workshop/wechat-lite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/flareon/projects/wechar-lite/build
+CMAKE_BINARY_DIR = /home/flareon/workshop/wechat-lite/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles /home/flareon/projects/wechar-lite/build/apps//CMakeFiles/progress.marks
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
+	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles /home/flareon/workshop/wechat-lite/build/apps//CMakeFiles/progress.marks
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/clean
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/preinstall
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/preinstall
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/CMakeFiles/wechat-lite.dir/rule:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/wechat-lite.dir/rule
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/wechat-lite.dir/rule
 .PHONY : apps/CMakeFiles/wechat-lite.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ wechat-lite: apps/CMakeFiles/wechat-lite.dir/rule
 
 # fast build rule for target.
 wechat-lite/fast:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/build
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/build
 .PHONY : wechat-lite/fast
 
 main.o: main.c.o
@@ -135,7 +135,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.o
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -143,7 +143,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.i
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -151,7 +151,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.s
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

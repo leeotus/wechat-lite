@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/flareon/projects/wechar-lite
+CMAKE_SOURCE_DIR = /home/flareon/workshop/wechat-lite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/flareon/projects/wechar-lite/build
+CMAKE_BINARY_DIR = /home/flareon/workshop/wechat-lite/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles /home/flareon/projects/wechar-lite/build/src//CMakeFiles/progress.marks
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
+	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles /home/flareon/workshop/wechat-lite/build/src//CMakeFiles/progress.marks
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/wcl.dir/rule:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/wcl.dir/rule
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/wcl.dir/rule
 .PHONY : src/CMakeFiles/wcl.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ wcl: src/CMakeFiles/wcl.dir/rule
 
 # fast build rule for target.
 wcl/fast:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/build
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/build
 .PHONY : wcl/fast
 
 io/input_buffer.o: io/input_buffer.c.o
@@ -135,7 +135,7 @@ io/input_buffer.o: io/input_buffer.c.o
 
 # target to build an object file
 io/input_buffer.c.o:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/input_buffer.c.o
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/input_buffer.c.o
 .PHONY : io/input_buffer.c.o
 
 io/input_buffer.i: io/input_buffer.c.i
@@ -143,7 +143,7 @@ io/input_buffer.i: io/input_buffer.c.i
 
 # target to preprocess a source file
 io/input_buffer.c.i:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/input_buffer.c.i
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/input_buffer.c.i
 .PHONY : io/input_buffer.c.i
 
 io/input_buffer.s: io/input_buffer.c.s
@@ -151,7 +151,7 @@ io/input_buffer.s: io/input_buffer.c.s
 
 # target to generate assembly for a file
 io/input_buffer.c.s:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/input_buffer.c.s
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/input_buffer.c.s
 .PHONY : io/input_buffer.c.s
 
 io/pager.o: io/pager.c.o
@@ -159,7 +159,7 @@ io/pager.o: io/pager.c.o
 
 # target to build an object file
 io/pager.c.o:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.o
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.o
 .PHONY : io/pager.c.o
 
 io/pager.i: io/pager.c.i
@@ -167,7 +167,7 @@ io/pager.i: io/pager.c.i
 
 # target to preprocess a source file
 io/pager.c.i:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.i
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.i
 .PHONY : io/pager.c.i
 
 io/pager.s: io/pager.c.s
@@ -175,7 +175,7 @@ io/pager.s: io/pager.c.s
 
 # target to generate assembly for a file
 io/pager.c.s:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.s
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/io/pager.c.s
 .PHONY : io/pager.c.s
 
 table.o: table.c.o
@@ -183,7 +183,7 @@ table.o: table.c.o
 
 # target to build an object file
 table.c.o:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/table.c.o
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/table.c.o
 .PHONY : table.c.o
 
 table.i: table.c.i
@@ -191,7 +191,7 @@ table.i: table.c.i
 
 # target to preprocess a source file
 table.c.i:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/table.c.i
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/table.c.i
 .PHONY : table.c.i
 
 table.s: table.c.s
@@ -199,7 +199,7 @@ table.s: table.c.s
 
 # target to generate assembly for a file
 table.c.s:
-	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/table.c.s
+	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/wcl.dir/build.make src/CMakeFiles/wcl.dir/table.c.s
 .PHONY : table.c.s
 
 # Help Target
@@ -231,6 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

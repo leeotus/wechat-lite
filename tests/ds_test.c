@@ -1,23 +1,19 @@
-#include <stdlib.h>
-#include <unistd.h>
 #include <stdio.h>
-
-typedef struct {
-    int num;
-}Msg;
-
-void just_for_test(void *msg)
-{
-    ((Msg*)msg)->num = 12;
-    return;
-}
+#include <unistd.h>
+#include "stack/c_stack.h"
 
 int main(int argc, char **argv)
 {
-    Msg *msg1 = (Msg *)malloc(sizeof(Msg));
-    msg1->num = 10;
-    printf("msg->num:%d\r\n", msg1->num);
-    just_for_test(msg1);
-    printf("msg->num:%d\r\n", msg1->num);
+    cstack *cs = cstack_init();
+    int num1 = 10;
+    int *num2;
+    cstack_push(cs, (void *)&num1);
+    for(int i=0;i<25;++i)
+    {
+        // test for mempool:
+        cstack_push(cs, (void *)&num1);
+    }
+    cstack_pop(cs, (void**)&num2);
+    printf("str2=%d\r\n", *num2);
     return 0;
 }

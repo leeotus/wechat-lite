@@ -1,7 +1,7 @@
 src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o: \
- /home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c \
+ /home/flareon/workshop/wechat-lite/src/data_structures/mem_pool/mempool.c \
  /usr/include/stdc-predef.h \
- /home/flareon/projects/wechar-lite/inc/data_structures/mem_pool/mempool.h \
+ /home/flareon/workshop/wechat-lite/inc/data_structures/mem_pool/mempool.h \
  /usr/include/unistd.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc
+C_INCLUDES = -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc
 
 C_FLAGS = -g
 

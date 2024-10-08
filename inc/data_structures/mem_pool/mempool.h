@@ -2,7 +2,6 @@
 
 #include <unistd.h>
 #include <stdbool.h>
-#include <stdlib.h>
 
 #define     INITIAL_MEMSIZE         16
 #define     MEMPOOL_CHUNKS          8
@@ -24,6 +23,7 @@ typedef struct {
     ssize_t cur_chunk_cursor;    // 指向当前内存用到哪个位置
 
     // 内存池申请的空间保存在这里
+    // TODO: 如果超出了MEMPOOL_CHUNKS的内存呢?  realloc? or void **mpool?
     void *mpool[MEMPOOL_CHUNKS];
 
     // 释放内存的时候收回该单链表中,以供后续可能的使用
@@ -38,5 +38,5 @@ void realloc_next_chunk(mem_pool *mp);
 void recyle_mem_avail(mem_pool *mp, void **ptr);
 
 // TODO: 垃圾回收
-void garbage_collect(mem_pool **mp);
+void garbage_collect(mem_pool *mp);
 void destroy_mempool(mem_pool **mp);

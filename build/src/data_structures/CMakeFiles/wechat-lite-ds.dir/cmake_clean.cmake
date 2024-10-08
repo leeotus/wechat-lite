@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o.d"
   "CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o"
   "CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o.d"
+  "CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o"
+  "CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o.d"
   "libwechat-lite-ds.a"
   "libwechat-lite-ds.pdb"
 )

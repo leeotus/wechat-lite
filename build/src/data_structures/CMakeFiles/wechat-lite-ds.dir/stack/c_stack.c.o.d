@@ -1,7 +1,7 @@
-src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o: \
- /home/flareon/workshop/wechat-lite/src/data_structures/queue/c_queue.c \
+src/data_structures/CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o: \
+ /home/flareon/workshop/wechat-lite/src/data_structures/stack/c_stack.c \
  /usr/include/stdc-predef.h \
- /home/flareon/workshop/wechat-lite/inc/data_structures/queue/c_queue.h \
+ /home/flareon/workshop/wechat-lite/inc/data_structures/stack/c_stack.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -17,8 +17,9 @@ src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /home/flareon/workshop/wechat-lite/inc/data_structures/mem_pool/mempool.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
