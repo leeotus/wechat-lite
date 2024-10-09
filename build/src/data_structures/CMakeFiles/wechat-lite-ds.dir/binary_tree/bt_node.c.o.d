@@ -1,7 +1,7 @@
 src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o: \
- /home/flareon/workshop/wechat-lite/src/data_structures/binary_tree/bt_node.c \
+ /home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c \
  /usr/include/stdc-predef.h \
- /home/flareon/workshop/wechat-lite/inc/data_structures/binary_tree/bt_node.h \
+ /home/flareon/projects/wechar-lite/inc/data_structures/binary_tree/bt_node.h \
  /usr/include/unistd.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -20,7 +20,7 @@ src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/flareon/workshop/wechat-lite/inc/data_structures/queue/c_queue.h \
+ /home/flareon/projects/wechar-lite/inc/data_structures/queue/c_queue.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \

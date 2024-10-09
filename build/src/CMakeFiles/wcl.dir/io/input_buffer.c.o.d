@@ -1,7 +1,7 @@
 src/CMakeFiles/wcl.dir/io/input_buffer.c.o: \
- /home/flareon/workshop/wechat-lite/src/io/input_buffer.c \
+ /home/flareon/projects/wechar-lite/src/io/input_buffer.c \
  /usr/include/stdc-predef.h \
- /home/flareon/workshop/wechat-lite/inc/io/input_buffer.h \
+ /home/flareon/projects/wechar-lite/inc/io/input_buffer.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -25,16 +25,16 @@ src/CMakeFiles/wcl.dir/io/input_buffer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/flareon/workshop/wechat-lite/inc/types.h \
+ /home/flareon/projects/wechar-lite/inc/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/flareon/workshop/wechat-lite/inc/io/statement.h \
- /home/flareon/workshop/wechat-lite/inc/table.h \
+ /home/flareon/projects/wechar-lite/inc/io/statement.h \
+ /home/flareon/projects/wechar-lite/inc/table.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/flareon/workshop/wechat-lite/inc/defs.h \
- /home/flareon/workshop/wechat-lite/inc/io/pager.h /usr/include/fcntl.h \
+ /home/flareon/projects/wechar-lite/inc/defs.h \
+ /home/flareon/projects/wechar-lite/inc/io/pager.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \

@@ -1,57 +1,52 @@
 [
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc -g -o CMakeFiles/wcl.dir/io/input_buffer.c.o -c /home/flareon/workshop/wechat-lite/src/io/input_buffer.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/io/input_buffer.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -g -o CMakeFiles/wcl.dir/io/input_buffer.c.o -c /home/flareon/projects/wechar-lite/src/io/input_buffer.c",
+  "file": "/home/flareon/projects/wechar-lite/src/io/input_buffer.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc -g -o CMakeFiles/wcl.dir/io/pager.c.o -c /home/flareon/workshop/wechat-lite/src/io/pager.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/io/pager.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -g -o CMakeFiles/wcl.dir/io/pager.c.o -c /home/flareon/projects/wechar-lite/src/io/pager.c",
+  "file": "/home/flareon/projects/wechar-lite/src/io/pager.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc -g -o CMakeFiles/wcl.dir/table.c.o -c /home/flareon/workshop/wechat-lite/src/table.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/table.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -g -o CMakeFiles/wcl.dir/table.c.o -c /home/flareon/projects/wechar-lite/src/table.c",
+  "file": "/home/flareon/projects/wechar-lite/src/table.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src/data_structures",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o -c /home/flareon/workshop/wechat-lite/src/data_structures/list/c_list.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/data_structures/list/c_list.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/list/c_list.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/list/c_list.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src/data_structures",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o -c /home/flareon/workshop/wechat-lite/src/data_structures/queue/c_queue.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/data_structures/queue/c_queue.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src/data_structures",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o -c /home/flareon/workshop/wechat-lite/src/data_structures/stack/c_stack.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/data_structures/stack/c_stack.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/queue/c_memqueue.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/queue/c_memqueue.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/queue/c_memqueue.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src/data_structures",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o -c /home/flareon/workshop/wechat-lite/src/data_structures/binary_tree/bt_node.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/data_structures/binary_tree/bt_node.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/stack/c_stack.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/stack/c_stack.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/src/data_structures",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o -c /home/flareon/workshop/wechat-lite/src/data_structures/mem_pool/mempool.c",
-  "file": "/home/flareon/workshop/wechat-lite/src/data_structures/mem_pool/mempool.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/binary_tree/bt_node.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/apps",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc -I/home/flareon/workshop/wechat-lite/src -g -o CMakeFiles/wechat-lite.dir/main.c.o -c /home/flareon/workshop/wechat-lite/apps/main.c",
-  "file": "/home/flareon/workshop/wechat-lite/apps/main.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/src/data_structures",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc/data_structures -g -o CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o -c /home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c",
+  "file": "/home/flareon/projects/wechar-lite/src/data_structures/mem_pool/mempool.c"
 },
 {
-  "directory": "/home/flareon/workshop/wechat-lite/build/tests",
-  "command": "/usr/bin/cc  -I/home/flareon/workshop/wechat-lite/build -I/home/flareon/workshop/wechat-lite/inc -I/home/flareon/workshop/wechat-lite/inc/data_structures -g -o CMakeFiles/ds-test.dir/ds_test.c.o -c /home/flareon/workshop/wechat-lite/tests/ds_test.c",
-  "file": "/home/flareon/workshop/wechat-lite/tests/ds_test.c"
-},
-{
-  "directory": "/home/flareon/workshop/wechat-lite/build/tests",
-  "command": "/usr/bin/cc   -g -o CMakeFiles/cbasic.dir/cbasic.c.o -c /home/flareon/workshop/wechat-lite/tests/cbasic.c",
-  "file": "/home/flareon/workshop/wechat-lite/tests/cbasic.c"
+  "directory": "/home/flareon/projects/wechar-lite/build/apps",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/wechar-lite/build -I/home/flareon/projects/wechar-lite/inc -I/home/flareon/projects/wechar-lite/src -g -o CMakeFiles/wechat-lite.dir/main.c.o -c /home/flareon/projects/wechar-lite/apps/main.c",
+  "file": "/home/flareon/projects/wechar-lite/apps/main.c"
 }
 ]

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/flareon/workshop/wechat-lite
+CMAKE_SOURCE_DIR = /home/flareon/projects/wechar-lite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/flareon/workshop/wechat-lite/build
+CMAKE_BINARY_DIR = /home/flareon/projects/wechar-lite/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/wcl.dir/depend.make
@@ -72,44 +72,44 @@ include src/CMakeFiles/wcl.dir/flags.make
 src/CMakeFiles/wcl.dir/io/input_buffer.c.o: src/CMakeFiles/wcl.dir/flags.make
 src/CMakeFiles/wcl.dir/io/input_buffer.c.o: ../src/io/input_buffer.c
 src/CMakeFiles/wcl.dir/io/input_buffer.c.o: src/CMakeFiles/wcl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/workshop/wechat-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/wcl.dir/io/input_buffer.c.o"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/wcl.dir/io/input_buffer.c.o -MF CMakeFiles/wcl.dir/io/input_buffer.c.o.d -o CMakeFiles/wcl.dir/io/input_buffer.c.o -c /home/flareon/workshop/wechat-lite/src/io/input_buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/wcl.dir/io/input_buffer.c.o"
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/wcl.dir/io/input_buffer.c.o -MF CMakeFiles/wcl.dir/io/input_buffer.c.o.d -o CMakeFiles/wcl.dir/io/input_buffer.c.o -c /home/flareon/projects/wechar-lite/src/io/input_buffer.c
 
 src/CMakeFiles/wcl.dir/io/input_buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wcl.dir/io/input_buffer.c.i"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/workshop/wechat-lite/src/io/input_buffer.c > CMakeFiles/wcl.dir/io/input_buffer.c.i
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/projects/wechar-lite/src/io/input_buffer.c > CMakeFiles/wcl.dir/io/input_buffer.c.i
 
 src/CMakeFiles/wcl.dir/io/input_buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wcl.dir/io/input_buffer.c.s"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/workshop/wechat-lite/src/io/input_buffer.c -o CMakeFiles/wcl.dir/io/input_buffer.c.s
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/io/input_buffer.c -o CMakeFiles/wcl.dir/io/input_buffer.c.s
 
 src/CMakeFiles/wcl.dir/io/pager.c.o: src/CMakeFiles/wcl.dir/flags.make
 src/CMakeFiles/wcl.dir/io/pager.c.o: ../src/io/pager.c
 src/CMakeFiles/wcl.dir/io/pager.c.o: src/CMakeFiles/wcl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/workshop/wechat-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/wcl.dir/io/pager.c.o"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/wcl.dir/io/pager.c.o -MF CMakeFiles/wcl.dir/io/pager.c.o.d -o CMakeFiles/wcl.dir/io/pager.c.o -c /home/flareon/workshop/wechat-lite/src/io/pager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/wcl.dir/io/pager.c.o"
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/wcl.dir/io/pager.c.o -MF CMakeFiles/wcl.dir/io/pager.c.o.d -o CMakeFiles/wcl.dir/io/pager.c.o -c /home/flareon/projects/wechar-lite/src/io/pager.c
 
 src/CMakeFiles/wcl.dir/io/pager.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wcl.dir/io/pager.c.i"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/workshop/wechat-lite/src/io/pager.c > CMakeFiles/wcl.dir/io/pager.c.i
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/projects/wechar-lite/src/io/pager.c > CMakeFiles/wcl.dir/io/pager.c.i
 
 src/CMakeFiles/wcl.dir/io/pager.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wcl.dir/io/pager.c.s"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/workshop/wechat-lite/src/io/pager.c -o CMakeFiles/wcl.dir/io/pager.c.s
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/io/pager.c -o CMakeFiles/wcl.dir/io/pager.c.s
 
 src/CMakeFiles/wcl.dir/table.c.o: src/CMakeFiles/wcl.dir/flags.make
 src/CMakeFiles/wcl.dir/table.c.o: ../src/table.c
 src/CMakeFiles/wcl.dir/table.c.o: src/CMakeFiles/wcl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/workshop/wechat-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/wcl.dir/table.c.o"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/wcl.dir/table.c.o -MF CMakeFiles/wcl.dir/table.c.o.d -o CMakeFiles/wcl.dir/table.c.o -c /home/flareon/workshop/wechat-lite/src/table.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/wcl.dir/table.c.o"
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/wcl.dir/table.c.o -MF CMakeFiles/wcl.dir/table.c.o.d -o CMakeFiles/wcl.dir/table.c.o -c /home/flareon/projects/wechar-lite/src/table.c
 
 src/CMakeFiles/wcl.dir/table.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wcl.dir/table.c.i"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/workshop/wechat-lite/src/table.c > CMakeFiles/wcl.dir/table.c.i
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/flareon/projects/wechar-lite/src/table.c > CMakeFiles/wcl.dir/table.c.i
 
 src/CMakeFiles/wcl.dir/table.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wcl.dir/table.c.s"
-	cd /home/flareon/workshop/wechat-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/workshop/wechat-lite/src/table.c -o CMakeFiles/wcl.dir/table.c.s
+	cd /home/flareon/projects/wechar-lite/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/flareon/projects/wechar-lite/src/table.c -o CMakeFiles/wcl.dir/table.c.s
 
 # Object files for target wcl
 wcl_OBJECTS = \
@@ -125,19 +125,19 @@ src/libwcl.a: src/CMakeFiles/wcl.dir/io/pager.c.o
 src/libwcl.a: src/CMakeFiles/wcl.dir/table.c.o
 src/libwcl.a: src/CMakeFiles/wcl.dir/build.make
 src/libwcl.a: src/CMakeFiles/wcl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/flareon/workshop/wechat-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libwcl.a"
-	cd /home/flareon/workshop/wechat-lite/build/src && $(CMAKE_COMMAND) -P CMakeFiles/wcl.dir/cmake_clean_target.cmake
-	cd /home/flareon/workshop/wechat-lite/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wcl.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/flareon/projects/wechar-lite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libwcl.a"
+	cd /home/flareon/projects/wechar-lite/build/src && $(CMAKE_COMMAND) -P CMakeFiles/wcl.dir/cmake_clean_target.cmake
+	cd /home/flareon/projects/wechar-lite/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wcl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/wcl.dir/build: src/libwcl.a
 .PHONY : src/CMakeFiles/wcl.dir/build
 
 src/CMakeFiles/wcl.dir/clean:
-	cd /home/flareon/workshop/wechat-lite/build/src && $(CMAKE_COMMAND) -P CMakeFiles/wcl.dir/cmake_clean.cmake
+	cd /home/flareon/projects/wechar-lite/build/src && $(CMAKE_COMMAND) -P CMakeFiles/wcl.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/wcl.dir/clean
 
 src/CMakeFiles/wcl.dir/depend:
-	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/flareon/workshop/wechat-lite /home/flareon/workshop/wechat-lite/src /home/flareon/workshop/wechat-lite/build /home/flareon/workshop/wechat-lite/build/src /home/flareon/workshop/wechat-lite/build/src/CMakeFiles/wcl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/flareon/projects/wechar-lite /home/flareon/projects/wechar-lite/src /home/flareon/projects/wechar-lite/build /home/flareon/projects/wechar-lite/build/src /home/flareon/projects/wechar-lite/build/src/CMakeFiles/wcl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/wcl.dir/depend
 

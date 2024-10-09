@@ -1,4 +1,4 @@
-# Install script for directory: /home/flareon/workshop/wechat-lite/src
+# Install script for directory: /home/flareon/projects/wechar-lite/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/flareon/workshop/wechat-lite/build/src/data_structures/cmake_install.cmake")
+  include("/home/flareon/projects/wechar-lite/build/src/data_structures/cmake_install.cmake")
 
 endif()
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/flareon/workshop/wechat-lite
+CMAKE_SOURCE_DIR = /home/flareon/projects/wechar-lite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/flareon/workshop/wechat-lite/build
+CMAKE_BINARY_DIR = /home/flareon/projects/wechar-lite/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles /home/flareon/workshop/wechat-lite/build/tests//CMakeFiles/progress.marks
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles 0
+	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles /home/flareon/projects/wechar-lite/build/tests//CMakeFiles/progress.marks
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/ds-test.dir/rule:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ds-test.dir/rule
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ds-test.dir/rule
 .PHONY : tests/CMakeFiles/ds-test.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ ds-test: tests/CMakeFiles/ds-test.dir/rule
 
 # fast build rule for target.
 ds-test/fast:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/build
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/build
 .PHONY : ds-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/cbasic.dir/rule:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/cbasic.dir/rule
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/cbasic.dir/rule
 .PHONY : tests/CMakeFiles/cbasic.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ cbasic: tests/CMakeFiles/cbasic.dir/rule
 
 # fast build rule for target.
 cbasic/fast:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/build
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/build
 .PHONY : cbasic/fast
 
 cbasic.o: cbasic.c.o
@@ -149,7 +149,7 @@ cbasic.o: cbasic.c.o
 
 # target to build an object file
 cbasic.c.o:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/cbasic.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/cbasic.c.o
 .PHONY : cbasic.c.o
 
 cbasic.i: cbasic.c.i
@@ -157,7 +157,7 @@ cbasic.i: cbasic.c.i
 
 # target to preprocess a source file
 cbasic.c.i:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/cbasic.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/cbasic.c.i
 .PHONY : cbasic.c.i
 
 cbasic.s: cbasic.c.s
@@ -165,7 +165,7 @@ cbasic.s: cbasic.c.s
 
 # target to generate assembly for a file
 cbasic.c.s:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/cbasic.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/cbasic.c.s
 .PHONY : cbasic.c.s
 
 ds_test.o: ds_test.c.o
@@ -173,7 +173,7 @@ ds_test.o: ds_test.c.o
 
 # target to build an object file
 ds_test.c.o:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/ds_test.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/ds_test.c.o
 .PHONY : ds_test.c.o
 
 ds_test.i: ds_test.c.i
@@ -181,7 +181,7 @@ ds_test.i: ds_test.c.i
 
 # target to preprocess a source file
 ds_test.c.i:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/ds_test.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/ds_test.c.i
 .PHONY : ds_test.c.i
 
 ds_test.s: ds_test.c.s
@@ -189,7 +189,7 @@ ds_test.s: ds_test.c.s
 
 # target to generate assembly for a file
 ds_test.c.s:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/ds_test.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/ds_test.c.s
 .PHONY : ds_test.c.s
 
 # Help Target
@@ -219,6 +219,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

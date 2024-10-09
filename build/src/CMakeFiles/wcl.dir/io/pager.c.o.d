@@ -1,8 +1,8 @@
 src/CMakeFiles/wcl.dir/io/pager.c.o: \
- /home/flareon/workshop/wechat-lite/src/io/pager.c \
+ /home/flareon/projects/wechar-lite/src/io/pager.c \
  /usr/include/stdc-predef.h \
- /home/flareon/workshop/wechat-lite/inc/io/pager.h \
- /home/flareon/workshop/wechat-lite/inc/defs.h \
+ /home/flareon/projects/wechar-lite/inc/io/pager.h \
+ /home/flareon/projects/wechar-lite/inc/defs.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/flareon/workshop/wechat-lite/tests/ds_test.c" "tests/CMakeFiles/ds-test.dir/ds_test.c.o" "gcc" "tests/CMakeFiles/ds-test.dir/ds_test.c.o.d"
+  "/home/flareon/projects/wechar-lite/tests/ds_test.c" "tests/CMakeFiles/ds-test.dir/ds_test.c.o" "gcc" "tests/CMakeFiles/ds-test.dir/ds_test.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/flareon/workshop/wechat-lite/build/src/data_structures/CMakeFiles/wechat-lite-ds.dir/DependInfo.cmake"
+  "/home/flareon/projects/wechar-lite/build/src/data_structures/CMakeFiles/wechat-lite-ds.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

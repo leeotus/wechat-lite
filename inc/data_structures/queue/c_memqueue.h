@@ -22,6 +22,7 @@ mem_cqueue *create_mem_cqueue();
 int mem_cqueue_push(mem_cqueue *mcq, void *val);
 void mem_cqueue_pop(mem_cqueue *mcq, void **ptr);
 
-bool is_memqueue_empty(mem_cqueue *mcq);
-size_t memqueue_elements_size(mem_cqueue *mcq);
+bool is_mem_cqueue_empty(mem_cqueue *mcq);
+size_t mem_cqueue_elements_size(mem_cqueue *mcq);
 void garbage_mem_collect(mem_cqueue *mcq);
+void destroy_mem_cqueue(mem_cqueue *mcq);

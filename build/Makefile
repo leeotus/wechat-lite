@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/flareon/workshop/wechat-lite
+CMAKE_SOURCE_DIR = /home/flareon/projects/wechar-lite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/flareon/workshop/wechat-lite/build
+CMAKE_BINARY_DIR = /home/flareon/projects/wechar-lite/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles /home/flareon/workshop/wechat-lite/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles /home/flareon/projects/wechar-lite/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,32 +155,6 @@ wechat-lite/fast:
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/wechat-lite.dir/build.make apps/CMakeFiles/wechat-lite.dir/build
 .PHONY : wechat-lite/fast
 
-#=============================================================================
-# Target rules for targets named ds-test
-
-# Build rule for target.
-ds-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ds-test
-.PHONY : ds-test
-
-# fast build rule for target.
-ds-test/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ds-test.dir/build.make tests/CMakeFiles/ds-test.dir/build
-.PHONY : ds-test/fast
-
-#=============================================================================
-# Target rules for targets named cbasic
-
-# Build rule for target.
-cbasic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cbasic
-.PHONY : cbasic
-
-# fast build rule for target.
-cbasic/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/cbasic.dir/build.make tests/CMakeFiles/cbasic.dir/build
-.PHONY : cbasic/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,8 +163,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cbasic"
-	@echo "... ds-test"
 	@echo "... wcl"
 	@echo "... wechat-lite"
 	@echo "... wechat-lite-ds"

@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/flareon/workshop/wechat-lite/src/io/input_buffer.c" "src/CMakeFiles/wcl.dir/io/input_buffer.c.o" "gcc" "src/CMakeFiles/wcl.dir/io/input_buffer.c.o.d"
-  "/home/flareon/workshop/wechat-lite/src/io/pager.c" "src/CMakeFiles/wcl.dir/io/pager.c.o" "gcc" "src/CMakeFiles/wcl.dir/io/pager.c.o.d"
-  "/home/flareon/workshop/wechat-lite/src/table.c" "src/CMakeFiles/wcl.dir/table.c.o" "gcc" "src/CMakeFiles/wcl.dir/table.c.o.d"
+  "/home/flareon/projects/wechar-lite/src/io/input_buffer.c" "src/CMakeFiles/wcl.dir/io/input_buffer.c.o" "gcc" "src/CMakeFiles/wcl.dir/io/input_buffer.c.o.d"
+  "/home/flareon/projects/wechar-lite/src/io/pager.c" "src/CMakeFiles/wcl.dir/io/pager.c.o" "gcc" "src/CMakeFiles/wcl.dir/io/pager.c.o.d"
+  "/home/flareon/projects/wechar-lite/src/table.c" "src/CMakeFiles/wcl.dir/table.c.o" "gcc" "src/CMakeFiles/wcl.dir/table.c.o.d"
   )
 
 # Targets to which this target links.

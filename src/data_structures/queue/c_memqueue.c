@@ -29,10 +29,20 @@ mem_cqueue *create_mem_cqueue()
  * @param mcq 带有内存池的单链队列指针
  * @param val 需要push进去队列的数据
  * @return 成功返回0,否则返回-1
+ * @note 如果mcq->cq_start_node到mcq->head之间有空闲节点的话应该优先使用其中的节点内存
  */
 int mem_cqueue_push(mem_cqueue *mcq, void *val)
 {
-    mem_cqueue_node *node = (mem_cqueue_node*)alloc_from_mempool(mcq->mp);
+    mem_cqueue_node *node;
+    if(mcq->cq_start_node != mcq->head)
+    {
+        // 说明有节点在pop之后没有被使用
+        node = mcq->cq_start_node->next;
+        mcq->cq_start_node->next = node->next;
+        if(mcq->head == node)
+            mcq->head = mcq->cq_start_node;
+    } else
+        node = (mem_cqueue_node*)alloc_from_mempool(mcq->mp);
     if(node == NULL)
         return -1;
     node->value = val;
@@ -50,7 +60,7 @@ int mem_cqueue_push(mem_cqueue *mcq, void *val)
  */
 void mem_cqueue_pop(mem_cqueue *mcq, void **ptr)
 {
-    if(is_memqueue_empty(mcq))
+    if(is_mem_cqueue_empty(mcq))
         return;
     mcq->head = mcq->head->next;
     *ptr = mcq->head->value;
@@ -61,7 +71,7 @@ void mem_cqueue_pop(mem_cqueue *mcq, void **ptr)
  * @brief 判断单链队列是否为空
  * @return 队列为空返回true,否则返回false
  */
-inline bool is_memqueue_empty(mem_cqueue *mcq)
+inline bool is_mem_cqueue_empty(mem_cqueue *mcq)
 {
     return (mcq->head == mcq->tail) ? true : false;
 }
@@ -74,7 +84,7 @@ inline bool is_memqueue_empty(mem_cqueue *mcq)
 size_t memqueue_elements_size(mem_cqueue *mcq)
 {
     size_t res = 1;
-    if(is_memqueue_empty(mcq))
+    if(is_mem_cqueue_empty(mcq))
         return 0;
     mem_cqueue_node *start = mcq->head;
     while(start->next != mcq->tail)
@@ -83,6 +93,16 @@ size_t memqueue_elements_size(mem_cqueue *mcq)
         start = start->next;
     }
     return res;
+}
+
+/**
+ * @brief 销毁所创建的带有内存池的单链队列对象
+ * @param mcq 指向单链队列对象的指针 
+ * @warning 
+ */
+void destroy_mem_cqueue(mem_cqueue *mcq)
+{
+    // 先对空闲的节点进行内存回收
 }
 
 /**

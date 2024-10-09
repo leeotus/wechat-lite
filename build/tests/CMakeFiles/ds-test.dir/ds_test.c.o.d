@@ -1,5 +1,5 @@
 tests/CMakeFiles/ds-test.dir/ds_test.c.o: \
- /home/flareon/workshop/wechat-lite/tests/ds_test.c \
+ /home/flareon/projects/wechar-lite/tests/ds_test.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -29,10 +29,10 @@ tests/CMakeFiles/ds-test.dir/ds_test.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/flareon/workshop/wechat-lite/inc/data_structures/stack/c_stack.h \
+ /home/flareon/projects/wechar-lite/inc/data_structures/stack/c_stack.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/flareon/workshop/wechat-lite/inc/data_structures/mem_pool/mempool.h
+ /home/flareon/projects/wechar-lite/inc/data_structures/mem_pool/mempool.h

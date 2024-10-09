@@ -1,5 +1,5 @@
 tests/CMakeFiles/cbasic.dir/cbasic.c.o: \
- /home/flareon/workshop/wechat-lite/tests/cbasic.c \
+ /home/flareon/projects/wechar-lite/tests/cbasic.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

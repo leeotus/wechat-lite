@@ -1,7 +1,7 @@
 src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o: \
- /home/flareon/workshop/wechat-lite/src/data_structures/queue/c_queue.c \
+ /home/flareon/projects/wechar-lite/src/data_structures/queue/c_queue.c \
  /usr/include/stdc-predef.h \
- /home/flareon/workshop/wechat-lite/inc/data_structures/queue/c_queue.h \
+ /home/flareon/projects/wechar-lite/inc/data_structures/queue/c_queue.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

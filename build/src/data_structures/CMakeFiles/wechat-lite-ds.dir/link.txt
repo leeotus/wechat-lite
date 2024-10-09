@@ -1,2 +1,2 @@
-/usr/bin/ar qc libwechat-lite-ds.a CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o
+/usr/bin/ar qc libwechat-lite-ds.a CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o CMakeFiles/wechat-lite-ds.dir/queue/c_memqueue.c.o CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o
 /usr/bin/ranlib libwechat-lite-ds.a

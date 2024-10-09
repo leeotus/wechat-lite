@@ -1,7 +1,7 @@
 src/CMakeFiles/wcl.dir/table.c.o: \
- /home/flareon/workshop/wechat-lite/src/table.c \
+ /home/flareon/projects/wechar-lite/src/table.c \
  /usr/include/stdc-predef.h \
- /home/flareon/workshop/wechat-lite/inc/table.h \
+ /home/flareon/projects/wechar-lite/inc/table.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,8 +18,8 @@ src/CMakeFiles/wcl.dir/table.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/flareon/workshop/wechat-lite/inc/defs.h \
- /home/flareon/workshop/wechat-lite/inc/io/pager.h /usr/include/fcntl.h \
+ /home/flareon/projects/wechar-lite/inc/defs.h \
+ /home/flareon/projects/wechar-lite/inc/io/pager.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \

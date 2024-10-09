@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/flareon/workshop/wechat-lite
+CMAKE_SOURCE_DIR = /home/flareon/projects/wechar-lite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/flareon/workshop/wechat-lite/build
+CMAKE_BINARY_DIR = /home/flareon/projects/wechar-lite/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles /home/flareon/workshop/wechat-lite/build/src/data_structures//CMakeFiles/progress.marks
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/workshop/wechat-lite/build/CMakeFiles 0
+	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles /home/flareon/projects/wechar-lite/build/src/data_structures//CMakeFiles/progress.marks
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/wechar-lite/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/clean
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/preinstall
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/preinstall
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule
 .PHONY : src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ wechat-lite-ds: src/data_structures/CMakeFiles/wechat-lite-ds.dir/rule
 
 # fast build rule for target.
 wechat-lite-ds/fast:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/build
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/build
 .PHONY : wechat-lite-ds/fast
 
 binary_tree/bt_node.o: binary_tree/bt_node.c.o
@@ -135,7 +135,7 @@ binary_tree/bt_node.o: binary_tree/bt_node.c.o
 
 # target to build an object file
 binary_tree/bt_node.c.o:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.o
 .PHONY : binary_tree/bt_node.c.o
 
 binary_tree/bt_node.i: binary_tree/bt_node.c.i
@@ -143,7 +143,7 @@ binary_tree/bt_node.i: binary_tree/bt_node.c.i
 
 # target to preprocess a source file
 binary_tree/bt_node.c.i:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.i
 .PHONY : binary_tree/bt_node.c.i
 
 binary_tree/bt_node.s: binary_tree/bt_node.c.s
@@ -151,7 +151,7 @@ binary_tree/bt_node.s: binary_tree/bt_node.c.s
 
 # target to generate assembly for a file
 binary_tree/bt_node.c.s:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/binary_tree/bt_node.c.s
 .PHONY : binary_tree/bt_node.c.s
 
 list/c_list.o: list/c_list.c.o
@@ -159,7 +159,7 @@ list/c_list.o: list/c_list.c.o
 
 # target to build an object file
 list/c_list.c.o:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.o
 .PHONY : list/c_list.c.o
 
 list/c_list.i: list/c_list.c.i
@@ -167,7 +167,7 @@ list/c_list.i: list/c_list.c.i
 
 # target to preprocess a source file
 list/c_list.c.i:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.i
 .PHONY : list/c_list.c.i
 
 list/c_list.s: list/c_list.c.s
@@ -175,7 +175,7 @@ list/c_list.s: list/c_list.c.s
 
 # target to generate assembly for a file
 list/c_list.c.s:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/list/c_list.c.s
 .PHONY : list/c_list.c.s
 
 mem_pool/mempool.o: mem_pool/mempool.c.o
@@ -183,7 +183,7 @@ mem_pool/mempool.o: mem_pool/mempool.c.o
 
 # target to build an object file
 mem_pool/mempool.c.o:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.o
 .PHONY : mem_pool/mempool.c.o
 
 mem_pool/mempool.i: mem_pool/mempool.c.i
@@ -191,7 +191,7 @@ mem_pool/mempool.i: mem_pool/mempool.c.i
 
 # target to preprocess a source file
 mem_pool/mempool.c.i:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.i
 .PHONY : mem_pool/mempool.c.i
 
 mem_pool/mempool.s: mem_pool/mempool.c.s
@@ -199,15 +199,39 @@ mem_pool/mempool.s: mem_pool/mempool.c.s
 
 # target to generate assembly for a file
 mem_pool/mempool.c.s:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/mem_pool/mempool.c.s
 .PHONY : mem_pool/mempool.c.s
+
+queue/c_memqueue.o: queue/c_memqueue.c.o
+.PHONY : queue/c_memqueue.o
+
+# target to build an object file
+queue/c_memqueue.c.o:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_memqueue.c.o
+.PHONY : queue/c_memqueue.c.o
+
+queue/c_memqueue.i: queue/c_memqueue.c.i
+.PHONY : queue/c_memqueue.i
+
+# target to preprocess a source file
+queue/c_memqueue.c.i:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_memqueue.c.i
+.PHONY : queue/c_memqueue.c.i
+
+queue/c_memqueue.s: queue/c_memqueue.c.s
+.PHONY : queue/c_memqueue.s
+
+# target to generate assembly for a file
+queue/c_memqueue.c.s:
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_memqueue.c.s
+.PHONY : queue/c_memqueue.c.s
 
 queue/c_queue.o: queue/c_queue.c.o
 .PHONY : queue/c_queue.o
 
 # target to build an object file
 queue/c_queue.c.o:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.o
 .PHONY : queue/c_queue.c.o
 
 queue/c_queue.i: queue/c_queue.c.i
@@ -215,7 +239,7 @@ queue/c_queue.i: queue/c_queue.c.i
 
 # target to preprocess a source file
 queue/c_queue.c.i:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.i
 .PHONY : queue/c_queue.c.i
 
 queue/c_queue.s: queue/c_queue.c.s
@@ -223,7 +247,7 @@ queue/c_queue.s: queue/c_queue.c.s
 
 # target to generate assembly for a file
 queue/c_queue.c.s:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/queue/c_queue.c.s
 .PHONY : queue/c_queue.c.s
 
 stack/c_stack.o: stack/c_stack.c.o
@@ -231,7 +255,7 @@ stack/c_stack.o: stack/c_stack.c.o
 
 # target to build an object file
 stack/c_stack.c.o:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.o
 .PHONY : stack/c_stack.c.o
 
 stack/c_stack.i: stack/c_stack.c.i
@@ -239,7 +263,7 @@ stack/c_stack.i: stack/c_stack.c.i
 
 # target to preprocess a source file
 stack/c_stack.c.i:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.i
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.i
 .PHONY : stack/c_stack.c.i
 
 stack/c_stack.s: stack/c_stack.c.s
@@ -247,7 +271,7 @@ stack/c_stack.s: stack/c_stack.c.s
 
 # target to generate assembly for a file
 stack/c_stack.c.s:
-	cd /home/flareon/workshop/wechat-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.s
+	cd /home/flareon/projects/wechar-lite/build && $(MAKE) $(MAKESILENT) -f src/data_structures/CMakeFiles/wechat-lite-ds.dir/build.make src/data_structures/CMakeFiles/wechat-lite-ds.dir/stack/c_stack.c.s
 .PHONY : stack/c_stack.c.s
 
 # Help Target
@@ -268,6 +292,9 @@ help:
 	@echo "... mem_pool/mempool.o"
 	@echo "... mem_pool/mempool.i"
 	@echo "... mem_pool/mempool.s"
+	@echo "... queue/c_memqueue.o"
+	@echo "... queue/c_memqueue.i"
+	@echo "... queue/c_memqueue.s"
 	@echo "... queue/c_queue.o"
 	@echo "... queue/c_queue.i"
 	@echo "... queue/c_queue.s"
@@ -285,6 +312,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/flareon/workshop/wechat-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/flareon/projects/wechar-lite/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
